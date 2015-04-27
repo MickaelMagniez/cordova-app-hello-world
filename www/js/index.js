@@ -45,6 +45,9 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    openInApp: function() {
+        cordova.InAppBrowser.open('http://www.google.com', '_self');
     }
 };
 
